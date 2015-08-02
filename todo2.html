@@ -6,18 +6,23 @@
     <link rel="stylesheet" type="text/css"  href="todo2.css">
   </head>
   <body>
-    <section class="container">
+    <main class="container">
       <h1>Things To Do:</h1>
-      <p>
-        <label for="newtask">Add New Task</label><input id="newtask" type="text"><button id="addtaskbutton">Add</button>
-      </p>
-      <h3>Tasks To Do</h3>
-      <ul id="incomplete-tasks">
-      </ul>
-      <h3>Completed Tasks</h3>
-      <ul id="completed-tasks">
-      </ul>
-    </section>
+      <section>
+        <p>
+          <label for="newtask">Add New Task</label><input id="newtask" type="text"><button id="addtaskbutton">Add</button>
+        </p>
+      </section>
+      <section>
+        <h3>Tasks To Do:</h3>
+        <ul id="incomplete-tasks" class="incomplete-tasks">
+        </ul>
+      </section>
+      <section>
+        <h3>Tasks Completed:</h3>
+        <ul id="completed-tasks" class="complete-tasks">
+        </ul>
+      </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="todo2.js"></script>
   </body>
